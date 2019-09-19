@@ -1,5 +1,4 @@
-
-
+/** Feature 1 */
 /*
 1. Write a fucntion component that takes no props
 2. Call it Greeting, write it using ES6’s arrow function
@@ -39,3 +38,25 @@ Greeting('ayo')
 
 //Result in experiment 1 is the same as this because innitial argument is used in the evalution of the statement 
 //and from then two evalutions, there can be one million evalutations still the same thing. 
+
+
+
+/** Feature 2 */
+
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+
+const Greeting = props => <h1 className="App">Hi {props.name}, I’m a smart component!</h1>
+
+export default Greeting;
+
+
+//Export this and use with the ReactDOM.render() function 
+
+
+//so 
+
+
+ReactDOM.render(<Greeting name="Ayo" /> , document.getElementById('root'))
