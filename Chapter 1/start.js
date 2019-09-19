@@ -61,3 +61,27 @@ let [a, b, c] = points;
 console.log(a, b, c);
 
  // Expected result: 20 30 40
+
+
+ /**
+  * Feature 6 
+  */
+
+const car = { type: 'Toyota', color: 'Silver', model: 2007
+};
+
+console.log(`${car.type} ${car.color} ${car.model}`);
+
+//* Expected result: Toyota Silver 2007
+//* Test console.log(`${car.type} ${car.color} ${car.model}` == 'Toyota Silver 2007') | PASS;
+let {type, color, model} = car;
+
+console.log(`${type} ${color} ${model}`);
+
+//* Test console.log(`${type} ${color} ${model}` == 'Toyota Silver 2007');
+
+//Experiment
+let {models} = car;
+console.log(`${type} ${color} ${models}`);
+
+//* Test console.log(models == undefined) | PASSED
