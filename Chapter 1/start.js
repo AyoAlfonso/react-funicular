@@ -85,3 +85,23 @@ let {models} = car;
 console.log(`${type} ${color} ${models}`);
 
 //* Test console.log(models == undefined) | PASSED
+
+
+
+/**Feature 6 */
+//Transform ordinary function to arrow function
+function (name) {
+return name.toUpperCase(); }
+
+let nx = nam => nam.toUpperCase()
+let array = ['array', 'arr', 'ar'];
+
+array.forEach(a => {
+  console.log(nx(a));
+})
+
+/*
+ *  ARRAY
+ *  ARR
+ *  AR
+ */
