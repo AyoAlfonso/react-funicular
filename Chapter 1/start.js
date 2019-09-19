@@ -94,8 +94,11 @@ function (name) {
 return name.toUpperCase();
 }
 
+//code 1
 let nx = nam => nam.toUpperCase()
 let array = ['array', 'arr', 'ar'];
+
+//code 2
 array.forEach(a => console.log(nx(a)));
 
 array.forEach(nam => console.log(nam.toUpperCase()));
@@ -105,3 +108,23 @@ array.forEach(nam => console.log(nam.toUpperCase()));
  *  ARR
  *  AR
  */
+
+ class Animal{
+  constructor(thiss){
+    this.specie = thiss
+    this.mamal = true 
+  }
+  isNotMamal(){
+    this.mamal = false
+  }
+}
+
+let eagle = new Animal('avian');
+/* Expected results
+eagle  | returns class name with constructor object, typeof is object
+eagle.mamal | returns true boolean
+eagle.isNotMamal ... [Function: isNotMamal]
+eagle.isNotMamal() undefined
+eagle.mamal | returns false
+eagle.specie | returns avian
+*/
