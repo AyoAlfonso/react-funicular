@@ -92,6 +92,14 @@ class Log extends React.Component {
 
 export default Log;
 
+//THINGS I MISSED OUT
+//1. onClick is a prop on the <button/>
+//2. the stateless functions in the class is initiated by this.nameofFunction
+//3. this.setState recieves an object.
+//4. That is when the component is restarted
+//5. Start the component wth a stateless one. Simple arrow func and then a class component i.e https://www.w3schools.com/react/react_props.asp
+
+
 
 /** Feature 4 */
 
