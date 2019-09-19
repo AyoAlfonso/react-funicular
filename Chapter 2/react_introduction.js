@@ -103,5 +103,32 @@ export default Log;
 
 /** Feature 4 */
 
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+/*
+  let rivers = [
+       'Nile',
+       'Orange',
+       'Niger'
+   ]
+
+ReactDOM.render(
+  <App lakeList= {rivers} /> , document.getElementById('root')
+  )
+  */
+
+const Log = ({ lakeList }) => (
+    <ul>
+        {lakeList.map((lake, i) =>
+            <li key={i}> {lake} </li>
+        )}
+    </ul>
+)
+
+export default Log;
+
+
 
 
