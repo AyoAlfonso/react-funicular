@@ -58,5 +58,42 @@ export default Greeting;
 
 //so 
 
-
 ReactDOM.render(<Greeting name="Ayo" /> , document.getElementById('root'))
+
+
+//Create a log in log out html page in react
+/** Feature 3 */
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+
+class Log extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { loogedin: true };
+        this.state = { username: '' };
+    }
+
+    login = () => this.setState({ loogedin: true, username: 'ayo' })
+    logout = () => this.setState({ loogedin: false, username: '' })
+
+    render() {
+        return (
+            <div>
+                <button onClick={this.login}>Log In </button>;
+      <button onClick={this.logout}>Log Out</button>;
+      <h2>Welcome, you're {this.state.loogedin ? "Logged In" : "Logged out"} {this.state.username}</h2>
+            </div>
+        )
+    }
+}
+
+
+export default Log;
+
+
+/** Feature 4 */
+
+
+
