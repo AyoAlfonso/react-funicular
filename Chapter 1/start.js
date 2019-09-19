@@ -91,14 +91,14 @@ console.log(`${type} ${color} ${models}`);
 /**Feature 6 */
 //Transform ordinary function to arrow function
 function (name) {
-return name.toUpperCase(); }
+return name.toUpperCase();
+}
 
 let nx = nam => nam.toUpperCase()
 let array = ['array', 'arr', 'ar'];
+array.forEach(a => console.log(nx(a)));
 
-array.forEach(a => {
-  console.log(nx(a));
-})
+array.forEach(nam => console.log(nam.toUpperCase()));
 
 /*
  *  ARRAY
